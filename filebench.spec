@@ -1,6 +1,6 @@
 Name:           filebench
 Version:        1.4.9.1
-Release:        1%{?dist}
+Release:        3%{?dist}
 Summary:        A model based file system workload generator
 
 Group:          Applications/File
@@ -46,6 +46,12 @@ install -m 644 -p %{SOURCE2} $RPM_BUILD_ROOT%{_mandir}/man1
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.4.9.1-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4.9.1-2
+- Mass rebuild 2013-12-27
+
 * Sat Sep 14 2013 Hushan Jia <hushan.jia@gmail.com> 1.4.9.1-1
 - Update to upstream 1.4.9.1 which have several bug fixes and enhancements
 - remove arch definitions, the syscalls are now detected during configuring
